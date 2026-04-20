@@ -10,7 +10,6 @@
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-extrabold: 800;
-    --font-weight-black: 900;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-raleway: "Raleway", sans-serif;
@@ -172,10 +171,6 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .font-black {
-    --tw-font-weight: var(--font-weight-black);
-    font-weight: var(--font-weight-black);
-  }
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
@@ -189,28 +184,28 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("./fonts/Outfit-Medium.ttf") format("truetype");
+  src: url("/fonts/Outfit-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("./fonts/Outfit-ExtraBold.ttf") format("truetype");
+  src: url("/fonts/Outfit-ExtraBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("./fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("/fonts/Raleway-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("./fonts/Raleway-ExtraBold.ttf") format("truetype");
+  src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype");
 }
 @property --tw-font-weight {
   syntax: "*";
