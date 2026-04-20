@@ -12,6 +12,7 @@
     --font-weight-extrabold: 800;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-outfit: "Outfit", sans-serif;
     --font-raleway: "Raleway", sans-serif;
   }
 }
@@ -164,6 +165,9 @@
   }
 }
 @layer utilities {
+  .font-outfit {
+    font-family: var(--font-outfit);
+  }
   .font-raleway {
     font-family: var(--font-raleway);
   }
