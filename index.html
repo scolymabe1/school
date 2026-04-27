@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body class="bg-orange-50 flex flex-col h-screen font-outfit xl:text-xl md:text-lg text-sm">
-    <header class="grid gap-2 px-8 pt-2">
+    <header class="grid gap-2 px-4 pt-2">
         <a href="." class="flex justify-center items-center gap-2 py-2 mt-2 font-medium text-sm bg-linear-to-r from-orange-100 to-orange-300 rounded-xl border-2">
             <p>Admission is Open, Grab your seat now </p>
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -37,8 +37,15 @@
     </header>
     <main class="grow container mx-auto">
         <section class="py-8 grid grid-cols-1 xl:grid-cols-2 gap-14 px-4">
-            <div class="bg-orange-200 shadow-2xl overflow-hidden rounded-2xl border-2">
-                <img src="img/hero_img.png" alt="" class="aspect-square object-cover">
+            <div class="relative bg-orange-200 shadow-2xl rounded-2xl border-8 border-orange-200 outline-2 -outline-offset-6">
+                <div class="absolute border-2 w-5 h-5 rounded-full bg-white -left-3 -top-3"></div>
+                <div class="absolute border-2 w-5 h-5 rounded-full bg-white -right-3 -top-3"></div>
+                <div class="relative flex justify-center items-center overflow-hidden rounded-xl aspect-square ">
+                    <img src="img/hero_img.png" alt="" class="aspect-square object-cover absolute inset-0 ">
+                    <img src="img/Abstract Design.svg" alt="" class="relative w-4/5 h-4/5 object-contain">
+                </div>
+                <div class="absolute border-2 w-5 h-5 rounded-full bg-white -left-3 -bottom-3"></div>
+                <div class="absolute border-2 w-5 h-5 rounded-full bg-white -right-3 -bottom-3"></div>
             </div>
             <div class="flex flex-col gap-12 justify-center h-full text-center xl:text-start">
                 <div class="flex flex-col font-outfit">
@@ -66,50 +73,50 @@
                 </ul>
             </div>
         </section>
-        <section class="flex flex-col gap-30 py-20 xl:py-10 px-8">
+        <section class="flex flex-col gap-20 xl:gap-30 py-10 xl:py-10 px-4">
             <div class="flex flex-col gap-6 justify-center items-center text-center">
-                <div class="py-2 px-4 border-2 rounded-xl text-lg bg-white">Children Deserve Bright Future</div>
-                <h2 class="text-6xl font-raleway font-extrabold">Our Benefits</h2>
-                <p class="text-xl xl:w-3/4">With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</p>
+                <div class="py-2 px-4 border-2 rounded-xl text-sm xl:text-lg bg-white">Children Deserve Bright Future</div>
+                <h2 class="text-4xl xl:text-6xl font-raleway font-extrabold">Our Benefits</h2>
+                <p class="text-base xl:text-xl xl:w-3/4">With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</p>
             </div>
             <ul class="grid grid-cols-1 xl:grid-cols-3 grid-rows-2 gap-x-10 gap-y-20">
                 <li class="relative flex flex-col gap-4 p-14 border-2 rounded-2xl shadow-[6px_6px_black] bg-white">
                     <div class="absolute -top-10 left-6 h-20 w-20 flex items-center justify-center text-2xl bg-orange-200 border-2 rounded-2xl"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-                    <h3 class="font-raleway font-bold text-2xl">Holistic Learning Approach</h3>
-                    <p class="text-xl text-gray-600">Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
+                    <h3 class="font-raleway font-bold text-xl xl:text-2xl">Holistic Learning Approach</h3>
+                    <p class="text-base xl:text-xl text-gray-600">Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
                 </li>
                 <li class="relative flex flex-col gap-4 p-14 border-2 rounded-2xl shadow-[6px_6px_black] bg-white">
                     <div class="absolute -top-10 left-6 h-20 w-20 flex items-center justify-center text-2xl bg-orange-200 border-2 rounded-2xl"><i class="fa fa-life-ring" aria-hidden="true"></i></div>
-                    <h3 class="font-raleway font-bold text-2xl">Experienced Educators</h3>
-                    <p class="text-xl text-gray-600">Our passionate and qualified teachers create a supportive and stimulating learning environment.</p>
+                    <h3 class="font-raleway font-bold text-xl xl:text-2xl">Experienced Educators</h3>
+                    <p class="text-base xl:text-xl text-gray-600">Our passionate and qualified teachers create a supportive and stimulating learning environment.</p>
                 </li>
                 <li class="relative flex flex-col gap-4 p-14 border-2 rounded-2xl shadow-[6px_6px_black] bg-white">
                     <div class="absolute -top-10 left-6 h-20 w-20 flex items-center justify-center text-2xl bg-orange-200 border-2 rounded-2xl"><i class="fa fa-map-o" aria-hidden="true"></i></div>
-                    <h3 class="font-raleway font-bold text-2xl">Nurturing Environment</h3>
-                    <p class="text-xl text-gray-600">We prioritize safety and provide a warm and caring atmosphere for every child.</p>
+                    <h3 class="font-raleway font-bold text-xl xl:text-2xl">Nurturing Environment</h3>
+                    <p class="text-base xl:text-xl text-gray-600">We prioritize safety and provide a warm and caring atmosphere for every child.</p>
                 </li>
                 <li class="relative flex flex-col gap-4 p-14 border-2 rounded-2xl shadow-[6px_6px_black] bg-white">
                     <div class="absolute -top-10 left-6 h-20 w-20 flex items-center justify-center text-2xl bg-orange-200 border-2 rounded-2xl"><i class="fa fa-map-signs" aria-hidden="true"></i></div>
-                    <h3 class="font-raleway font-bold text-2xl">Play-Based Learning</h3>
-                    <p class="text-xl text-gray-600">We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+                    <h3 class="font-raleway font-bold text-xl xl:text-2xl">Play-Based Learning</h3>
+                    <p class="text-base xl:text-xl text-gray-600">We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
                 </li>
                 <li class="relative flex flex-col gap-4 p-14 border-2 rounded-2xl shadow-[6px_6px_black] bg-white">
                     <div class="absolute -top-10 left-6 h-20 w-20 flex items-center justify-center text-2xl bg-orange-200 border-2 rounded-2xl"><i class="fa fa-motorcycle" aria-hidden="true"></i></div>
-                    <h3 class="font-raleway font-bold text-2xl">Individualized Attention</h3>
-                    <p class="text-xl text-gray-600">Our small class sizes enable personalized attention, catering to each child's unique needs.</p>
+                    <h3 class="font-raleway font-bold text-xl xl:text-2xl">Individualized Attention</h3>
+                    <p class="text-base xl:text-xl text-gray-600">Our small class sizes enable personalized attention, catering to each child's unique needs.</p>
                 </li>
                 <li class="relative flex flex-col gap-4 p-14 border-2 rounded-2xl shadow-[6px_6px_black] bg-white">
                     <div class="absolute -top-10 left-6 h-20 w-20 flex items-center justify-center text-2xl bg-orange-200 border-2 rounded-2xl"><i class="fa fa-id-card-o" aria-hidden="true"></i></div>
-                    <h3 class="font-raleway font-bold text-2xl">Parent Involvement</h3>
-                    <p class="text-xl text-gray-600">We foster a strong parent-school partnership to ensure seamless communication and collaboration.</p>
+                    <h3 class="font-raleway font-bold text-xl xl:text-2xl">Parent Involvement</h3>
+                    <p class="text-base xl:text-xl text-gray-600">We foster a strong parent-school partnership to ensure seamless communication and collaboration.</p>
                 </li>
             </ul>
         </section>
-        <section class="flex flex-col gap-30 py-20 xl:py-10 px-8">
+        <section class="flex flex-col gap-10 xl:gap-30 py-10 xl:py-10 px-4">
             <div class="flex flex-col gap-6 justify-center items-center text-center">
-                <div class="py-2 px-4 border-2 rounded-xl text-lg bg-white">Their Happy Words 🤗</div>
-                <h2 class="text-6xl font-raleway font-extrabold">Our Testimonials</h2>
-                <p class="text-xl xl:w-3/4">Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.</p>
+                <div class="py-2 px-4 border-2 rounded-xl text-sm xl:text-lg bg-white">Their Happy Words 🤗</div>
+                <h2 class="text-4xl xl:text-5xl  font-raleway font-extrabold">Our Testimonials</h2>
+                <p class="text-base xl:text-xl xl:w-3/4">Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.</p>
             </div>
             <div class="grid grid-cols-1 xl:grid-cols-[auto_auto_auto] justify-center items-center gap-14">
                 <button class="h-10 w-10 hidden xl:flex justify-center items-center  border-2 rounded-lg hover:cursor-pointer bg-white">
@@ -178,14 +185,14 @@
                 </div>
             </div> 
         </section>
-        <section class="flex flex-col gap-30 py-20 xl:py-10  px-8">
+        <section class="flex flex-col gap-10 xl:gap-30 py-10 xl:py-10  px-4">
             <div class="flex flex-col gap-6 justify-center items-center text-center">
-                <div class="py-2 px-4 border-2 rounded-xl text-lg bg-white">Solutions For The Doubts</div>
-                <h2 class="text-6xl font-raleway font-extrabold">Frequently Asked Questions</h2>
-                <p class="text-xl xl:w-3/4">Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education.</p>
+                <div class="py-2 px-4 border-2 rounded-xl text-sm xl:text-lg bg-white">Solutions For The Doubts</div>
+                <h2 class="text-4xl xl:text-6xl font-raleway font-extrabold">Frequently Asked Questions</h2>
+                <p class="text-base xl:text-xl xl:w-3/4">Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education.</p>
             </div>
             
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-6">
                 <div class="grid grid-cols-1 gap-6 h-fit">
                     <article x-data="{ open: false }" x-bind:class="open ? 'bg-gray-50' : 'bg-orange-100'" class="grid grid-cols-[1fr_auto] gap-x-8 items-start border-2 p-4 xl:p-10 rounded-2xl">
                         <div class="flex flex-col gap-y-6 justify-center h-full">
@@ -193,7 +200,7 @@
                             <hr x-bind:class="open ? '' : 'hidden'" class="border">
                             <p x-bind:class="open ? '' : 'hidden'" class="text-gray-600">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                         </div>
-                        <button @click="open = !open" class="h-10 w-10 flex justify-center items-center  border-2 rounded-lg hover:cursor-pointer bg-white">
+                        <button @click="open = !open" class="h-10 w-10 flex justify-center items-center border-2 rounded-lg hover:cursor-pointer bg-white">
                             <i x-show="!open"  class="fa fa-plus" aria-hidden="true"></i>
                             <i x-show="open"  class="fa fa-minus" aria-hidden="true"></i>
                         </button>
@@ -215,7 +222,7 @@
                             <hr x-bind:class="open ? '' : 'hidden'" class="border">
                             <p x-bind:class="open ? '' : 'hidden'" class="text-gray-600">Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
                         </div>
-                        <button @click="open = !open" class="h-10 w-10 flex justify-center items-center  border-2 rounded-lg hover:cursor-pointer bg-white">
+                        <button @click="open = !open" class="h-10 w-10 flex justify-center items-center border-2 rounded-lg hover:cursor-pointer bg-white">
                             <i x-show="!open"  class="fa fa-plus" aria-hidden="true"></i>
                             <i x-show="open"  class="fa fa-minus" aria-hidden="true"></i>
                         </button>
@@ -280,11 +287,11 @@
                 </div>
             </div>
         </section>
-        <section class="flex flex-col gap-30 py-20 xl:py-10  px-8">
+        <section class="flex flex-col gap-10 xl:gap-30 py-10 xl:py-10 px-4">
             <div class="flex flex-col gap-6 justify-center items-center text-center">
-                <div class="py-2 px-4 border-2 rounded-xl text-lg bg-white">Explore More</div>
-                <h2 class="text-6xl font-raleway font-extrabold">Navigate through our Pages</h2>
-                <p class="text-xl xl:w-3/4">Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</p>
+                <div class="py-2 px-4 border-2 rounded-xl text-sm xl:text-lg bg-white">Explore More</div>
+                <h2 class="text-4xl xl:text-6xl font-raleway font-extrabold">Navigate through our Pages</h2>
+                <p class="text-base xl:text-xl xl:w-3/4">Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</p>
             </div>
 
             <div class="grid grid-cols-1 xl:grid-cols-2 gap-10">
