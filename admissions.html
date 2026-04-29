@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="alpine.js" defer></script>
+</head>
+<body class="bg-orange-50 flex flex-col h-screen font-outfit">
+    <header class="w-full grid gap-2 px-4 pt-2">
+        <a href="." class="flex justify-center items-center gap-2 py-2 mt-2 font-medium text-sm bg-linear-to-r from-orange-100 to-orange-300 rounded-xl border-2">
+            <p class="text-center line-clamp-1">Admission is Open, Grab your seat now</p>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
+        <div class="flex justify-between lg:grid lg:grid-cols-[auto_1fr] h-18 border-2 rounded-2xl overflow-hidden">
+            <a href="." class="flex gap-2 justify-center items-center shrink-0 px-4 bg-orange-300 border-r-2">
+                <img src="img/shape-14.svg" alt="" class="h-8">
+                <h1 class="font-semibold whitespace-nowrap">Little Learners</h1>
+            </a>
+
+            <nav class="flex justify-between lg:border-l-2 divide-x-2 lg:grid lg:grid-cols-6 lg:justify-self-end" x-data="{
+                items: [
+                    { name: 'home', href: 'index.html'},
+                    { name: 'about us', href: 'about.html'},
+                    { name: 'Admissions ', href: 'admissions.html'},
+                    { name: 'Academus ', href: '' },
+                    { name: 'Student Life', href: ''},
+                    { name: 'Contact', href: '' }
+                ]
+            }">
+                <template x-for="(item, index) in items">
+                    <a 
+                        :href="item.href" 
+                        x-text="item.name.toUpperCase()"
+                        class="hidden lg:flex justify-center items-center px-4  hover:bg-orange-100"
+                        :class="index === 5 ? 'rounded-r-xl bg-orange-400' : item.href == window.location.pathname.split('/')[window.location.pathname.split('/').length-1] ? 'bg-orange-200' : '' "
+                        ></a>
+                </template>
+            </nav>
+
+        </div>
+    </header>
+  <main class="flex-grow container mx-auto py-16 grid gap-y-40">
+        
+ 
+  </main>
+  <footer class="w-full px-4 py-10">
+        <div class="flex flex-col gap-12 text-base p-6 xl:p-12 border-2 rounded-2xl shadow-[6px_6px_black] bg-white">
+            <div class="grid grid-cols-1 xl:grid-cols-[1fr_auto] gap-12 justify-between">
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-6 items-center text-center xl:items-start xl:text-start">
+                        <img src="img/Logo.svg" alt="" class="h-10 w-fit">
+                        <p class="text-neutral-800">
+                            We believe in the power of play to foster creativity, problem-solving skills, and imagination.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center justify-center border-2 bg-orange-100 h-10 w-10 rounded-lg">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <span class="break-all">hello@littlelearners.com</span>
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center justify-center border-2 bg-orange-100 h-10 w-10 rounded-lg">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <span>+91 91813 23 2309</span>
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center justify-center border-2 bg-orange-100 h-10 w-10 rounded-lg">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <span>Somewhere in the World</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 xl:grid-cols-4 gap-10">
+                    <div class="flex flex-col gap-4">
+                        <p class="font-semibold">Home</p>
+                        <ul class="flex flex-col gap-4 text-neutral-800">
+                            <li><a href="" class="hover:text-neutral-600">Features</a></li>
+                            <li><a href="" class="hover:text-neutral-600">Our Testimonials</a></li>
+                            <li><a href="" class="hover:text-neutral-600">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <p class="font-semibold">About Us</p>
+                        <ul class="flex flex-col gap-4 text-neutral-800">
+                            <li><a href="" class="hover:text-neutral-600">Our Mission</a></li>
+                            <li><a href="" class="hover:text-neutral-600">Our Vision</a></li>
+                            <li><a href="" class="hover:text-neutral-600">Awards</a></li>
+                            <li><a href="" class="hover:text-neutral-600">History</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <p class="font-semibold">Academics</p>
+                        <ul class="flex flex-col gap-4 text-neutral-800">
+                            <li><a href="" class="hover:text-neutral-600">Special Features</a></li>
+                            <li><a href="" class="hover:text-neutral-600">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <p class="font-semibold">Contact Us</p>
+                        <ul class="flex flex-col gap-4 text-neutral-800">
+                            <li><a href="" class="hover:text-neutral-600">Information</a></li>
+                            <li><a href="" class="hover:text-neutral-600">Map & Direction</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-sm">
+                <hr>
+
+                <div class="py-8 flex flex-col xl:flex-row justify-between items-center mx-auto gap-4">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="pr-2 border-r-2 hover:text-neutral-600">
+                            <a href="">Terms of Service</a>
+                        </div>
+                        <div class="px-2 border-r-2 hover:text-neutral-600">
+                            <a href="">Privacy Policy</a>
+                        </div>
+                        <div class="pl-2 hover:text-neutral-600">
+                            <a href="">Cookie Policy</a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 w-fit mx-auto xl:mx-0">
+                        <button class="flex items-center justify-center border-2 text-2xl h-12 w-12 rounded-lg cursor-pointer bg-orange-200 hover:bg-orange-300">
+                            <i class="fa fa-facebook"></i>
+                        </button>
+
+                        <button class="flex items-center justify-center border-2 text-2xl h-12 w-12 rounded-lg cursor-pointer bg-orange-200 hover:bg-orange-300">
+                            <i class="fa fa-twitter"></i>
+                        </button>
+
+                        <button class="flex items-center justify-center border-2 text-2xl h-12 w-12 rounded-lg cursor-pointer bg-orange-200 hover:bg-orange-300">
+                            <i class="fa fa-instagram"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="flex items-center justify-center pt-8 font-medium text-center text-neutral-500">
+                    <span>Copyright © [2023] Little Learners Academy. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
